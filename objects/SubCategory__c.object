@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Sub Category</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Actual_Spent__c</fullName>
+        <description>Actual Spent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Actual Spent</inlineHelpText>
+        <label>Actual Spent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <description>Category</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Category</inlineHelpText>
+        <label>Category</label>
+        <referenceTo>Category__c</referenceTo>
+        <relationshipLabel>SubCategories</relationshipLabel>
+        <relationshipName>SubCategories</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Forecast_Savings__c</fullName>
+        <description>Forecast Savings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Forecast Savings</inlineHelpText>
+        <label>Forecast Savings</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Forecast_Spent__c</fullName>
+        <description>Forecast Spent</description>
+        <externalId>false</externalId>
+        <label>Forecast Spent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Realized_Savings__c</fullName>
+        <description>Realized Savings</description>
+        <externalId>false</externalId>
+        <label>Realized Savings</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Realized_Spent__c</fullName>
+        <description>Realized Spent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Realized Spent</inlineHelpText>
+        <label>Realized Spent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SubCategoryNo__c</fullName>
+        <description>Sub Category Number</description>
+        <displayFormat>SCAT-{000000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>Sub Category Number</inlineHelpText>
+        <label>SubCategoryNo</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <label>SubCategory</label>
+    <nameField>
+        <label>SubCategory Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>SubCategories</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

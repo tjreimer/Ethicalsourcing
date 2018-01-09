@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Supplier Measures</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>KPI_Target__c</fullName>
+        <externalId>false</externalId>
+        <formula>SIPM_KPI__r.KPI_Target__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>KPI Target</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MeasureNum__c</fullName>
+        <description>Measure Numeric</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Measure Numeric</inlineHelpText>
+        <label>MeasureNum</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Measure_Date__c</fullName>
+        <description>Measure Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Measure Date</inlineHelpText>
+        <label>Measure Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Measure_Enumeration__c</fullName>
+        <description>Measure Enumeration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Measure Enumeration</inlineHelpText>
+        <label>Measure Enumeration</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Measure_Percent__c</fullName>
+        <description>Measure Percent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Measure Percent</inlineHelpText>
+        <label>Measure Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Qualifier__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( SIPM_KPI__r.Qualifier__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Qualifier</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SIPM_KPI__c</fullName>
+        <description>SIPM KPI</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SIPM KPI</inlineHelpText>
+        <label>SIPM KPI</label>
+        <referenceTo>SPIM_KPI__c</referenceTo>
+        <relationshipLabel>Supplier Measures</relationshipLabel>
+        <relationshipName>Supplier_Measures</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Supplier__c</fullName>
+        <description>Supplier</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Supplier</inlineHelpText>
+        <label>Supplier</label>
+        <referenceTo>Supplier__c</referenceTo>
+        <relationshipLabel>Supplier Measures</relationshipLabel>
+        <relationshipName>Supplier_Measures</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>UOM__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( SIPM_KPI__r.UOM__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UOM</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Supplier Measure</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Supplier__c</columns>
+        <columns>SIPM_KPI__c</columns>
+        <columns>Qualifier__c</columns>
+        <columns>KPI_Target__c</columns>
+        <columns>Measure_Date__c</columns>
+        <columns>MeasureNum__c</columns>
+        <columns>Measure_Percent__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>SMRS-{00000000}</displayFormat>
+        <label>SMeasureNo</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Supplier Measures</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

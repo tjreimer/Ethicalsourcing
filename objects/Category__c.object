@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Categories</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Baseline_Savings__c</fullName>
+        <description>Baseline Savings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Baseline Savings</inlineHelpText>
+        <label>Baseline Savings</label>
+        <summarizedField>SubCategory__c.Realized_Savings__c</summarizedField>
+        <summaryForeignKey>SubCategory__c.Category__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Baseline_Spent__c</fullName>
+        <description>Baseline Spent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Baseline Spent</inlineHelpText>
+        <label>Baseline Spent</label>
+        <summarizedField>SubCategory__c.Realized_Spent__c</summarizedField>
+        <summaryForeignKey>SubCategory__c.Category__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Category_No__c</fullName>
+        <description>Category Number</description>
+        <displayFormat>CAT-{000000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>Category Number</inlineHelpText>
+        <label>Category No</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Forecast_Savings__c</fullName>
+        <description>Forecast Savings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Forecast Savings</inlineHelpText>
+        <label>Forecast Savings</label>
+        <summarizedField>SubCategory__c.Forecast_Savings__c</summarizedField>
+        <summaryForeignKey>SubCategory__c.Category__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Forecast_Spent__c</fullName>
+        <description>Forecast Spent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Forecast Spent</inlineHelpText>
+        <label>Forecast Spent</label>
+        <summarizedField>SubCategory__c.Forecast_Spent__c</summarizedField>
+        <summaryForeignKey>SubCategory__c.Category__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Resource__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Resource</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Resource</inlineHelpText>
+        <label>Resource</label>
+        <referenceTo>Resource__c</referenceTo>
+        <relationshipLabel>Categories</relationshipLabel>
+        <relationshipName>Categories</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Category</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Category_No__c</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Category Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Categories</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

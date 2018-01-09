@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Supplier or Vendor</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Address_Line_1__c</fullName>
+        <description>Address Line 1</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Address Line 1</inlineHelpText>
+        <label>Address Line 1</label>
+        <length>35</length>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Line_2__c</fullName>
+        <description>Address Line 2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Address Line 2</inlineHelpText>
+        <label>Address Line 2</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <description>Supplier Category</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Supplier Category</inlineHelpText>
+        <label>Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>non-Food</fullName>
+                    <default>true</default>
+                    <label>non-Food</label>
+                </value>
+                <value>
+                    <fullName>Food</fullName>
+                    <default>false</default>
+                    <label>Food</label>
+                </value>
+                <value>
+                    <fullName>Apparel</fullName>
+                    <default>false</default>
+                    <label>Apparel</label>
+                </value>
+                <value>
+                    <fullName>Furniture</fullName>
+                    <default>false</default>
+                    <label>Furniture</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Certificate_Of_Insurance__c</fullName>
+        <description>Certificate of Insurance</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Certificate of Insurance</inlineHelpText>
+        <label>Certificate Of Insurance</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <description>City</description>
+        <externalId>false</externalId>
+        <inlineHelpText>City</inlineHelpText>
+        <label>City</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <description>Comment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Comment</inlineHelpText>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Contact_Email__c</fullName>
+        <description>Contact Email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contact Email</inlineHelpText>
+        <label>Contact Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <description>Contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contact</inlineHelpText>
+        <label>Contact</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Compliant__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( Supplier_Status__c, &quot;Delisted&quot;), &quot;Discontinued&quot;, 
+ IF(AND( ISPICKVAL( Supplier_Status__c, &quot;Active&quot;) ,  
+        Contract_Signed__c  = True) ,&quot;Compliant&quot; ,&quot;Non Compliant&quot;) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contract Compliant</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Receive_Date__c</fullName>
+        <description>Contract Receive Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contract Receive Date</inlineHelpText>
+        <label>Contract Receive Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Signed_Date__c</fullName>
+        <description>Contract Signed Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contract Signed Date</inlineHelpText>
+        <label>Contract Signed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Signed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Contract Signed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contract Signed</inlineHelpText>
+        <label>Contract Signed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Control_Brand_Vendor__c</fullName>
+        <externalId>false</externalId>
+        <label>Control Brand Vendor</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>Supplier</relationshipLabel>
+        <relationshipName>Supplier</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Document_Reference__c</fullName>
+        <description>Documentation Reference</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Documentation Reference</inlineHelpText>
+        <label>Document Reference</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Fax__c</fullName>
+        <description>Fax</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Fax</inlineHelpText>
+        <label>Fax</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>GeoLocation__c</fullName>
+        <description>GeoLocation</description>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <inlineHelpText>GeoLocation</inlineHelpText>
+        <label>GeoLocation</label>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>Organization__c</fullName>
+        <description>Organization</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Organization</inlineHelpText>
+        <label>Organization</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Business Unit 1</fullName>
+                    <default>true</default>
+                    <label>Business Unit 1</label>
+                </value>
+                <value>
+                    <fullName>Business Unit 2</fullName>
+                    <default>false</default>
+                    <label>Business Unit 2</label>
+                </value>
+                <value>
+                    <fullName>Business Unit 3</fullName>
+                    <default>false</default>
+                    <label>Business Unit 3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PSTL_Code__c</fullName>
+        <description>Postal Code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Postal Code</inlineHelpText>
+        <label>PSTL Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <description>Phone Number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Phone Number</inlineHelpText>
+        <label>Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Prev_Supplier_Name__c</fullName>
+        <description>Previous Supplier Name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Previous Supplier Nam</inlineHelpText>
+        <label>Prev Supplier Name</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Country__c</field>
+                <operation>equals</operation>
+                <valueField>Region__c.Country__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Region__c</referenceTo>
+        <relationshipLabel>Supplier</relationshipLabel>
+        <relationshipName>SupplierRegion</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Supplier_Agreement__c</fullName>
+        <description>Supplier Agreement Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Supplier Agreement Type</inlineHelpText>
+        <label>Supplier Agreement</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Existing</fullName>
+                    <default>false</default>
+                    <label>Existing</label>
+                </value>
+                <value>
+                    <fullName>Resisted</fullName>
+                    <default>false</default>
+                    <label>Resisted</label>
+                </value>
+                <value>
+                    <fullName>Addendum Agreement</fullName>
+                    <default>false</default>
+                    <label>Addendum Agreement</label>
+                </value>
+                <value>
+                    <fullName>Specific Supplier Agreement</fullName>
+                    <default>false</default>
+                    <label>Specific Supplier Agreement</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Supplier_Compliant_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND(  ISPICKVAL(  Supplier_Status__c  , &quot;Active&quot;),
+NOT(ISBLANK(  Contract_Signed_Date__c  )),
+  Certificate_Of_Insurance__c  &gt;= TODAY())</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Supplier Compliant Status</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Supplier_Name_2__c</fullName>
+        <description>Supplier Name 2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Supplier Name 2</inlineHelpText>
+        <label>Supplier Name 2</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Supplier_Number__c</fullName>
+        <description>Supplier Number</description>
+        <displayFormat>{0000000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>Supplier Number</inlineHelpText>
+        <label>Supplier Number</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Supplier_Status__c</fullName>
+        <description>Supplier Status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Supplier Status</inlineHelpText>
+        <label>Supplier Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Delisted</fullName>
+                    <default>false</default>
+                    <label>Delisted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Supplier_Tax_Number__c</fullName>
+        <description>Supplier Tax Number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Supplier Tax Number</inlineHelpText>
+        <label>Supplier Tax Number</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Supplier_Type__c</fullName>
+        <description>Supplier Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Supplier Type</inlineHelpText>
+        <label>Supplier Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Domestic</fullName>
+                    <default>false</default>
+                    <label>Domestic</label>
+                </value>
+                <value>
+                    <fullName>Offshore</fullName>
+                    <default>true</default>
+                    <label>Offshore</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Website__c</fullName>
+        <description>Supplier Website</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Supplier Website</inlineHelpText>
+        <label>Website</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <label>Supplier</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Supplier_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>Address_Line_1__c</columns>
+        <columns>Country__c</columns>
+        <columns>Supplier_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Supplier Name</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Supplier</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

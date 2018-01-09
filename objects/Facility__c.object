@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Production Facility</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Accord_Lead__c</fullName>
+        <description>Accord Lead</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Accord Lead</inlineHelpText>
+        <label>Accord Lead</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Address_Line_1__c</fullName>
+        <description>Address Line 1</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Address Line 1</inlineHelpText>
+        <label>Address Line 1</label>
+        <length>35</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Line_2__c</fullName>
+        <description>Address Line 2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Address Line 2</inlineHelpText>
+        <label>Address Line 2</label>
+        <length>35</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Authorized_Subcontracting__c</fullName>
+        <description>Authorized Contracting</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Authorized Contracting</inlineHelpText>
+        <label>Authorized Subcontracting</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Bribery__c</fullName>
+        <description>Bribery</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bribery</inlineHelpText>
+        <label>Bribery</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <description>City</description>
+        <externalId>false</externalId>
+        <inlineHelpText>City</inlineHelpText>
+        <label>City</label>
+        <length>35</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <description>Comments</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Comments</inlineHelpText>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Contact_Email__c</fullName>
+        <description>Contact Email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contact Email</inlineHelpText>
+        <label>Contact Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <description>Contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contact</inlineHelpText>
+        <label>Contact</label>
+        <length>35</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CountryName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Country__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CountryName</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Country</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Country</inlineHelpText>
+        <label>Country</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>Facilities</relationshipLabel>
+        <relationshipName>Facilities</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Document_Reference__c</fullName>
+        <description>Document Reference</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Document Reference</inlineHelpText>
+        <label>Document Reference</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Electrical_Safety_Audit__c</fullName>
+        <description>Electrical Safety Audit</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Electrical Safety Aud</inlineHelpText>
+        <label>Electrical Safety Audit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Engineering_Audit_Requested__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>true</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Low</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Engineering_Audit_Not_Completed__c</fullName>
+        <description>Engineering Audit not completed</description>
+        <externalId>false</externalId>
+        <formula>AND(
+
+ISPICKVAL( Engineering_Audit_Requested__c  , &quot;YES&quot;) ,
+
+
+OR(ISBLANK(TEXT( Electrical_Safety_Audit__c )),
+ISBLANK(TEXT(  Structural_Audit__c  )),
+ISBLANK(TEXT(   Other_Audits__c   )),
+ISBLANK(TEXT(  Fire_Safety_Audit__c  ))),
+
+
+ OR(ISPICKVAL( Facility_Status__c ,&quot;Active&quot;) ,
+ISPICKVAL( Facility_Status__c ,&quot;Manual Accept Shipments&quot;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Factory Status = ACTIVE  and
+Engineering Audit Requested = Yes and
+Structural or Fire Safety or Electrical = Blank</inlineHelpText>
+        <label>Engineering Audit Not Completed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Engineering_Audit_Not_Requested__c</fullName>
+        <description>Engineering Audit not requested</description>
+        <externalId>false</externalId>
+        <formula>AND(
+OR(ISBLANK(TEXT( Engineering_Audit_Requested__c )),
+ISPICKVAL( Engineering_Audit_Requested__c  , &quot;No&quot;)) ,
+ OR(ISPICKVAL( Facility_Status__c ,&quot;Active&quot;) ,
+ISPICKVAL( Facility_Status__c ,&quot;Manual Accept Shipments&quot;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Factory Status = ACTIVE or MANUAL ACCEPT SHIPMENTS and
+Engineering Audit Requested = NO or BLANK</inlineHelpText>
+        <label>Engineering Audit Not Requested</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Engineering_Audit_Requested__c</fullName>
+        <description>Engineering Audit Requested</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Engineering Audit Requested</inlineHelpText>
+        <label>Engineering Audit Requested</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Engineering_audit_completed__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND(ISPICKVAL(Engineering_Audit_Requested__c  , &quot;Yes&quot;),
+
+AND(NOT(ISBLANK(TEXT( Electrical_Safety_Audit__c ))),
+NOT(ISBLANK(TEXT(  Structural_Audit__c  ))),
+NOT(ISBLANK(TEXT(   Other_Audits__c   ))),
+NOT(ISBLANK(TEXT(   Fire_Safety_Audit__c   )))),
+
+ISPICKVAL(  Facility_Status__c  ,&quot;Active&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Engineering audit completed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FS_Audit_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>FS Audit Required</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FS Audit Required</inlineHelpText>
+        <label>FS Audit Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FS_CAPA_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>FS CAPA Completed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Group  = FS FOLLOW UP and
+Factory Status  = ACTIVE  and
+Audit Date = NOT BLANK and
+FS Audit Required = NOT BLANK</inlineHelpText>
+        <label>FS CAPA Completed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FS_CAPA_Green_list_criteria__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>FS CAPA Green list criteria</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FS CAPA Green list criteria</inlineHelpText>
+        <label>FS CAPA Green list criteria</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FS_CAPA_Not_Requested__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND(   Pending_CAPA_FS__c   = FALSE ,
+   Past_CAPA_Deadline_FS__c    = FALSE,
+              FS_CAPA_Completed__c    = FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FS CAPA Not Requested</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FS_Compliant__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>FS Compliant</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Group = PERIODIC FS and
+Factory Status = ACTIVE and
+FS Audit Required = NOT BLANK and
+Audit Date  &gt;= TODAY()-365*3</inlineHelpText>
+        <label>FS Compliant</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FS_Due_for_new_listing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>FS Due for new listing</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Group = PERIODIC FS and
+Factory Status = ACTIVE and
+Audit Date = BLANK and
+FS Audit Required = NOT BLANK</inlineHelpText>
+        <label>FS Due for new listing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FS_Green_list_criteria__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>FS Green list criteria</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FS Green list criteria</inlineHelpText>
+        <label>FS Green list criteria</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FS_Required_country__c</fullName>
+        <description>FS Required country</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FS Required country</inlineHelpText>
+        <label>FS Required Country</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FS_Training_cost__c</fullName>
+        <description>FS Training cost</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FS Training cost</inlineHelpText>
+        <label>FS Training cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FS_Training_date__c</fullName>
+        <description>FS Training date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FS Training date</inlineHelpText>
+        <label>FS Training date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FS_Training_request__c</fullName>
+        <description>FS Training request</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FS Training request</inlineHelpText>
+        <label>FS Training request</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FS_Traning_invoice__c</fullName>
+        <description>FS Training invoice</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FS Training invoice</inlineHelpText>
+        <label>FS Training invoice</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Facility_Name_2__c</fullName>
+        <description>Facility Name 2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Facility Name 2</inlineHelpText>
+        <label>Facility Name 2</label>
+        <length>35</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Facility_Number__c</fullName>
+        <description>Facility Number</description>
+        <displayFormat>{0000000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>Facility Number</inlineHelpText>
+        <label>Facility Number</label>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Facility_Status__c</fullName>
+        <description>Facility Status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Facility Status</inlineHelpText>
+        <label>Facility Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Delisted</fullName>
+                    <default>false</default>
+                    <label>Delisted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Fax__c</fullName>
+        <description>Fax</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Fax</inlineHelpText>
+        <label>Fax</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Findings__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( No_of_Audits_with_Findings__c  &gt; 0, true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checked when # of audits with findings &gt; 0</inlineHelpText>
+        <label>Findings</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fire_Safety_Audit__c</fullName>
+        <description>Fire Safety Audit</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Fire Safety Audit</inlineHelpText>
+        <label>Fire Safety Audit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Engineering_Audit_Requested__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>true</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Low</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GeoLocation__c</fullName>
+        <description>GeoLocation</description>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <inlineHelpText>GeoLocation</inlineHelpText>
+        <label>GeoLocation</label>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>Google_Maps__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://maps.google.com/maps?q=&quot; &amp; Address_Line_1__c &amp; &apos;,+&apos; &amp; City__c &amp; &apos;,+&apos; &amp; RegionName__c &amp; &apos;,+&apos; &amp; CountryName__c,&quot;Click to Plot on Maps&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Google Maps</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Green_List_Status__c</fullName>
+        <description>Green List Status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Green List Status</inlineHelpText>
+        <label>Green List Status</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Latest_Annual_WCA_Date__c</fullName>
+        <description>Latest Annual WCA Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Latest Annual WCA Date</inlineHelpText>
+        <label>Latest Annual WCA Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Latest_FS_CAPA_Date__c</fullName>
+        <description>Latest FS CAPA Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Latest FS CAPA Date</inlineHelpText>
+        <label>Latest FS CAPA Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Latest_FS_CAPA_Due_Date__c</fullName>
+        <description>Latest FS CAPA Due Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Latest FS CAPA Due Date</inlineHelpText>
+        <label>Latest FS CAPA Due Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Latest_On_Site_Investigation_Date__c</fullName>
+        <description>Latest On Site Investigation Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Latest On Site Investigation Date</inlineHelpText>
+        <label>Latest On Site Investigation Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Latest_Periodic_FS_Date__c</fullName>
+        <description>Latest Periodic FS Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Latest Periodic FS Date</inlineHelpText>
+        <label>Latest Periodic FS Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Latest_WCA_CAPA_Date__c</fullName>
+        <description>Latest WCA CAPA Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Latest WCA CAPA Date</inlineHelpText>
+        <label>Latest WCA CAPA Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Latest_WCA_CAPA_Due_Date__c</fullName>
+        <description>Latest WCA CAPA Due Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Latest WCA CAPA Due Date</inlineHelpText>
+        <label>Latest WCA CAPA Due Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Main_Product_Group__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Main Product Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Main Product Group</inlineHelpText>
+        <label>Main Product Group</label>
+        <referenceTo>Product_Group__c</referenceTo>
+        <relationshipLabel>Facilities</relationshipLabel>
+        <relationshipName>Facilities</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Multi_Factory_Building__c</fullName>
+        <description>Multi Factory Building</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Multi Factory Building</inlineHelpText>
+        <label>Multi Factory Building</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Multi_Purpose_Building__c</fullName>
+        <description>Multi Purpose Building</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Multi Purpose Building</inlineHelpText>
+        <label>Multi Purpose Building</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>No_Findings__c</fullName>
+        <description>Check if number of audits with findings = 0</description>
+        <externalId>false</externalId>
+        <formula>IF( No_of_Audits_with_Findings__c =0,true,false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Check if number of audits with findings = 0</inlineHelpText>
+        <label>No Findings</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>No_of_A_Findings__c</fullName>
+        <description>Number of A Findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of A Findings</inlineHelpText>
+        <label>No of A Findings</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_Audits__c</fullName>
+        <description>Number of Audits</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Audits</inlineHelpText>
+        <label>No of Audits</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_Audits_with_Findings__c</fullName>
+        <description>Number of audits with findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of audits with findings</inlineHelpText>
+        <label>No of Audits with Findings</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_B1_Findings__c</fullName>
+        <description>Number of B1 findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of B1 findings</inlineHelpText>
+        <label>No of B1 Findings</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_B2_6_Findings__c</fullName>
+        <description>Number of B2 &lt; 6 Findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of B2 &lt; 6 Findings</inlineHelpText>
+        <label>No of B2&lt;6 Findings</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_B2_Findings__c</fullName>
+        <description>Number of B2 Findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of B2 Findings</inlineHelpText>
+        <label>No of B2 Findings</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_B2_T_Findings__c</fullName>
+        <description>Number of B2 + T Findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of B2 + T Findings</inlineHelpText>
+        <label>No of B2+T Findings</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_buildings_belong_to_facility__c</fullName>
+        <description>Number of buildings belong to facility</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of buildings belong to facility</inlineHelpText>
+        <label>No of buildings belong to facility</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_floors_in_each_building__c</fullName>
+        <description>Number of floors in each building</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of floors in each building</inlineHelpText>
+        <label>No of floors in each building</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_of_workers__c</fullName>
+        <description>Number of workers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of workers</inlineHelpText>
+        <label>No of workers</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>On_Site_Investigation_Not_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>On site investigation not completed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Group  = ON SITE INVESTIGATION and
+facility status = DELISTED or ACTIVE  and
+audit date = BLANK</inlineHelpText>
+        <label>On Site Investigation Not Completed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Other_Audits__c</fullName>
+        <description>Other Audits</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Other Audits</inlineHelpText>
+        <label>Other Audits</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Engineering_Audit_Requested__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>true</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Low</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Overall_Risk__c</fullName>
+        <description>Overall Risk</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Overall Risk</inlineHelpText>
+        <label>Overall Risk</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PSTL_Code__c</fullName>
+        <description>Postal Code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Postal Code</inlineHelpText>
+        <label>PSTL Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Past_Audit_Deadline_FS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Past Audit Deadline (FS)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Group = PERIODIC FS and
+Factory Status  = ACTIVE and
+Audit Date = NOT BLANK and
+Audit Date &lt; TODAY()-365*3 and
+FS Audit Required = NOT BLANK</inlineHelpText>
+        <label>Past Audit Deadline (FS)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Past_Audit_Deadline_WCA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Past Audit Deadline (WCA)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Group = ANNUAL WCA and
+Factory Status  = ACTIVE and
+Audit Date &lt; TODAY()-365 and
+Audit date = NOT BLANK</inlineHelpText>
+        <label>Past Audit Deadline (WCA)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Past_CAPA_Deadline_FS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Past CAPA Deadline (FS)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Past CAPA Deadline (FS)
+Audit Group  = FS FOLLOW UP and
+Factory Status = ACTIVE and
+Audit Date = BLANK and
+CAPA Due Date  &lt; TODAY() (DUE DATE a result of selecting 1/3/6 months) and
+FS Audit Required  = NOT BLANK</inlineHelpText>
+        <label>Past CAPA Deadline (FS)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Past_CAPA_Deadline_WCA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Past CAPA Deadline (WCA)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Past CAPA Deadline (WCA)
+Audit Group  = WCA FOLLOW UP and
+Factory Status = ACTIVE and
+Audit Date = BLANK and
+CAPA Due Date  &lt; TODAY() (DUE DATE a result of selecting 1/3/6 months) and</inlineHelpText>
+        <label>Past CAPA Deadline (WCA)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Pending_CAPA_FS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Pending CAPA (FS)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Group = FS FOLLOW UP and
+FACTORY STATUS = ACTIVE and
+Audit Date = BLANK and
+CAPA Due Date &gt;= TODAY() and
+FS Audi Required = NOT BLANK</inlineHelpText>
+        <label>Pending CAPA (FS)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Pending_CAPA_WCA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Pending CAPA (WCA)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Group = WCA FOLLOW UP and
+Factory Status  = ACTIVE and
+Audit Date = BLANK and
+CAPA Due Date &gt;= TODAY()</inlineHelpText>
+        <label>Pending CAPA (WCA)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <description>Phone</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Phone</inlineHelpText>
+        <label>Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Prev_Facility_Name__c</fullName>
+        <description>Previous Facility Name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Previous Facility Name</inlineHelpText>
+        <label>Prev Facility Name</label>
+        <length>35</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RegionName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Region__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RegionName</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Region</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Region</inlineHelpText>
+        <label>Region</label>
+        <referenceTo>Region__c</referenceTo>
+        <relationshipLabel>Facilities</relationshipLabel>
+        <relationshipName>Facilities</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Remove_from_Green_List_Due_to_WCA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Remove from Green List (Due to WCA)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Remove from Green List (Due to WCA)</inlineHelpText>
+        <label>Remove from Green List (Due to WCA)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Removed_from_Green_List_Due_to_FS_CAPA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Removed from Green List (Due to FS CAPA)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Removed from Green List (Due to FS CAPA)</inlineHelpText>
+        <label>Removed from Green List (Due to FS CAPA)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Removed_from_Green_List_Due_to_FS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Removed from Green List (Due to FS)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Removed from Green List (Due to FS)</inlineHelpText>
+        <label>Removed from Green List (Due to FS)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Removed_from_Greenlist_Due_to_WCA_CAPA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Removed from Greenlist (Due to WCA CAPA)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Removed from Greenlist (Due to WCA CAPA)</inlineHelpText>
+        <label>Removed from Greenlist (Due to WCA CAPA)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Structural_Audit__c</fullName>
+        <description>Structural Audit</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Structural Audit</inlineHelpText>
+        <label>Structural Audit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Engineering_Audit_Requested__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>true</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Low</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Training_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Training Completed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Training Completed</inlineHelpText>
+        <label>Training Completed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Training_Not_Completed__c</fullName>
+        <description>Training Not Completed</description>
+        <externalId>false</externalId>
+        <formula>AND(OR(ISPICKVAL(Facility_Status__c, &quot;Active&quot;)),
+ ISPICKVAL( FS_Training_request__c , &quot;Yes&quot;),
+ ISBLANK(FS_Training_date__c )
+ )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Facility Status = Active and
+FS Training Request = Yes and
+FS Training Date = Blank</inlineHelpText>
+        <label>Training Not Completed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Training_not_requested__c</fullName>
+        <description>Training not requested</description>
+        <externalId>false</externalId>
+        <formula>AND(OR(ISPICKVAL(Facility_Status__c, &quot;Active&quot;),ISPICKVAL(Facility_Status__c, &quot;Manual Accept Shipments&quot;)),
+OR(
+ ISPICKVAL( FS_Training_request__c , &quot;No&quot;),
+ ISBLANK(TEXT(FS_Training_request__c)))
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Facility Status = Active or Manual Accept Shipments and
+FS Training Request = No or Blank</inlineHelpText>
+        <label>Training not requested</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Unauthorized_Sub_Contracting__c</fullName>
+        <description>Unauthorized Subcontracting</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unauthorized Subcontracting</inlineHelpText>
+        <label>Unauthorized Subcontracting</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WCA_CAPA_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>WCA CAPA Completed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>WCA CAPA Completed</inlineHelpText>
+        <label>WCA CAPA Completed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WCA_CAPA_Greenlist_Criteria__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>WCA CAPA Greenlist Criteria</description>
+        <externalId>false</externalId>
+        <inlineHelpText>WCA CAPA Greenlist Criteria</inlineHelpText>
+        <label>WCA CAPA Greenlist Criteria</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WCA_CAPA_Not_Requested__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>WCA CAPA Not Requested</description>
+        <externalId>false</externalId>
+        <inlineHelpText>WCA CAPA Not Requested</inlineHelpText>
+        <label>WCA CAPA Not Requested</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WCA_Compliant__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>WCA Compliant</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Group = ANNUAL WCA and
+Facility Status = ACTIVE and
+Audit Date  &gt;=TODAY()-365</inlineHelpText>
+        <label>WCA Compliant</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WCA_Due_for_new_listing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>WCA Due for new listing</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Group = ANNUAL WCA and
+Factory Status  = ACTIVE and
+Audit Date = BLANK</inlineHelpText>
+        <label>WCA Due for new listing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WCA_Greenlist_Criteria__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>WCA Greenlist Criteria</description>
+        <externalId>false</externalId>
+        <inlineHelpText>WCA Greenlist Criteria</inlineHelpText>
+        <label>WCA Greenlist Criteria</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Facility</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Facility_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>Country__c</columns>
+        <columns>Facility_Status__c</columns>
+        <columns>Green_List_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Facility Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Facilities</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Facility_Assessment</fullName>
+        <availability>online</availability>
+        <description>Facility Assessment</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Facility Assessment</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/apex.js&quot;)}
+var result = sforce.apex.execute(&quot;FacilityActionCntrl&quot;,&quot;facilityAction&quot;,{facilityId:&quot;{!Facility__c.Facility_Number__c}&quot;});
+alert(result);
+window.location.reload();</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Facility_History</fullName>
+        <availability>online</availability>
+        <description>Facility History</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Facility History</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/apex.js&quot;)}
+var result = sforce.apex.execute(&quot;FacilityHistory&quot;,&quot;createFacilityHistory&quot;,{facilityNo:&quot;{!Facility__c.Facility_Number__c}&quot;});
+alert(result);
+window.location.reload();</url>
+    </webLinks>
+</CustomObject>

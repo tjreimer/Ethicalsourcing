@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Facility Audits</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>A_Finding__c</fullName>
+        <description>A Findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A Findings</inlineHelpText>
+        <label>A Finding</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Audit_Date__c</fullName>
+        <description>Audit Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Date</inlineHelpText>
+        <label>Audit Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Audit_Group__c</fullName>
+        <description>Audit Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Group</inlineHelpText>
+        <label>Audit Group</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Annual WCA</fullName>
+                    <default>true</default>
+                    <label>Annual WCA</label>
+                </value>
+                <value>
+                    <fullName>Periodic FS</fullName>
+                    <default>false</default>
+                    <label>Periodic FS</label>
+                </value>
+                <value>
+                    <fullName>WCA Follow Up CAPA</fullName>
+                    <default>false</default>
+                    <label>WCA Follow Up CAPA</label>
+                </value>
+                <value>
+                    <fullName>FS Follow Up CAPA</fullName>
+                    <default>false</default>
+                    <label>FS Follow Up CAPA</label>
+                </value>
+                <value>
+                    <fullName>On Site Investigation</fullName>
+                    <default>false</default>
+                    <label>On Site Investigation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Audit_Request_Date__c</fullName>
+        <defaultValue>Today()</defaultValue>
+        <description>Audit Request Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Request Date</inlineHelpText>
+        <label>Audit Request Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Audit_Type__c</fullName>
+        <description>Audit Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Audit Type</inlineHelpText>
+        <label>Audit Type</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Audit_Group__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>WCA</fullName>
+                    <default>true</default>
+                    <label>WCA</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>FS</fullName>
+                    <default>false</default>
+                    <label>FS</label>
+                </value>
+                <value>
+                    <fullName>WCA CAPA (1 Mnth)</fullName>
+                    <default>false</default>
+                    <label>WCA CAPA (1 Mnth)</label>
+                </value>
+                <value>
+                    <fullName>WCA CAPA (3 Mnth)</fullName>
+                    <default>false</default>
+                    <label>WCA CAPA (3 Mnth)</label>
+                </value>
+                <value>
+                    <fullName>WCA CAPA (6 Mnth)</fullName>
+                    <default>false</default>
+                    <label>WCA CAPA (6 Mnth)</label>
+                </value>
+                <value>
+                    <fullName>Other CAPA ( 6 Mnth)</fullName>
+                    <default>false</default>
+                    <label>Other CAPA ( 6 Mnth)</label>
+                </value>
+                <value>
+                    <fullName>FS CAPA (1 Mnth)</fullName>
+                    <default>false</default>
+                    <label>FS CAPA (1 Mnth)</label>
+                </value>
+                <value>
+                    <fullName>FS CAPA (3 Mnth)</fullName>
+                    <default>false</default>
+                    <label>FS CAPA (3 Mnth)</label>
+                </value>
+                <value>
+                    <fullName>FS CAPA (6 Mnth)</fullName>
+                    <default>false</default>
+                    <label>FS CAPA (6 Mnth)</label>
+                </value>
+                <value>
+                    <fullName>On Site Investigation</fullName>
+                    <default>false</default>
+                    <label>On Site Investigation</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Annual WCA</controllingFieldValue>
+                <valueName>WCA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Annual WCA</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Periodic FS</controllingFieldValue>
+                <valueName>FS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WCA Follow Up CAPA</controllingFieldValue>
+                <valueName>WCA CAPA (1 Mnth)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WCA Follow Up CAPA</controllingFieldValue>
+                <valueName>WCA CAPA (3 Mnth)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WCA Follow Up CAPA</controllingFieldValue>
+                <valueName>WCA CAPA (6 Mnth)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WCA Follow Up CAPA</controllingFieldValue>
+                <valueName>Other CAPA ( 6 Mnth)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FS Follow Up CAPA</controllingFieldValue>
+                <valueName>FS CAPA (1 Mnth)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FS Follow Up CAPA</controllingFieldValue>
+                <valueName>FS CAPA (3 Mnth)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FS Follow Up CAPA</controllingFieldValue>
+                <valueName>FS CAPA (6 Mnth)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>On Site Investigation</controllingFieldValue>
+                <valueName>On Site Investigation</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>B1_Findings__c</fullName>
+        <description>B1 Findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>B1 Findings</inlineHelpText>
+        <label>B1 Findings</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>B2_6_Findings__c</fullName>
+        <description>B2 &lt; 6 Findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>B2 &lt; 6 Findings</inlineHelpText>
+        <label>B2 &lt; 6 Findings</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>B2_Finding__c</fullName>
+        <description>B2 Findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>B2 Findings</inlineHelpText>
+        <label>B2 Findings</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>B2_T_Findings__c</fullName>
+        <description>B2 + To Findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>B2 + To Findings</inlineHelpText>
+        <label>B2 + T Findings</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CAPA_Due_Date__c</fullName>
+        <description>CAPA Due Date</description>
+        <externalId>false</externalId>
+        <formula>CASE( 
+ Audit_Type__c, 
+&quot;WCA CAPA (1 Mnth)&quot;, Audit_Request_Date__c  + 30, 
+&quot;WCA CAPA (3 Mnth)&quot;, Audit_Request_Date__c  + 90, 
+&quot;WCA CAPA (6 Mnth)&quot;, Audit_Request_Date__c  + 180, 
+&quot;Other CAPA (6 Mnth)&quot;, Audit_Request_Date__c  + 180, 
+&quot;FS CAPA (1 Mnth)&quot;, Audit_Request_Date__c  + 30, 
+&quot;FS CAPA (3 Mnth)&quot;, Audit_Request_Date__c  + 90, 
+&quot;FS CAPA (6 Mnth)&quot;, Audit_Request_Date__c  + 180, 
+ null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>CAPA Due Date</inlineHelpText>
+        <label>CAPA Due Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Critical_Findings__c</fullName>
+        <description>Critical Findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Critical Findings</inlineHelpText>
+        <label>Critical Findings</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Facility_Number__c</fullName>
+        <description>Facility Number</description>
+        <externalId>false</externalId>
+        <formula>Facility__r.Facility_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Facility Number</inlineHelpText>
+        <label>Facility Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Facility__c</fullName>
+        <description>Facility</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Facility</inlineHelpText>
+        <label>Facility</label>
+        <referenceTo>Facility__c</referenceTo>
+        <relationshipLabel>Facility Audits</relationshipLabel>
+        <relationshipName>Facility_Audits</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Major_Findings__c</fullName>
+        <description>Major Findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Major Findings</inlineHelpText>
+        <label>Major Findings</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Minor_Findings__c</fullName>
+        <description>Minor Findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Minor Findings</inlineHelpText>
+        <label>Minor Findings</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Moderate_Findings__c</fullName>
+        <description>Moderate Findings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Moderate Findings</inlineHelpText>
+        <label>Moderate Findings</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outcome__c</fullName>
+        <description>Outcome</description>
+        <externalId>false</externalId>
+        <formula>IF( 
+OR( 
+ ISPICKVAL( Audit_Type__c, &quot;On Site Investigation&quot; ) , 
+ ISBLANK(Audit_Date__c)), &quot; &quot;, 
+
+ IF (OR( ISPICKVAL( A_Finding__c , &quot;Yes&quot;), 
+ ISPICKVAL( B1_Findings__c , &quot;Yes&quot;)),&quot;High&quot;, 
+IF( OR(ISPICKVAL( B2_Finding__c , &quot;Yes&quot;), 
+ ISPICKVAL( B2_6_Findings__c , &quot;Yes&quot;), 
+ ISPICKVAL(  B2_T_Findings__c  ,&quot;Yes&quot;)),&quot;Medium&quot;,&quot;Low&quot;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Outcome</inlineHelpText>
+        <label>Outcome</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Facility Audits</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Facility_Number__c</columns>
+        <columns>Audit_Group__c</columns>
+        <columns>Audit_Type__c</columns>
+        <columns>Audit_Request_Date__c</columns>
+        <columns>Audit_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{0000000}</displayFormat>
+        <label>Facility Audit Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Facility Audits</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

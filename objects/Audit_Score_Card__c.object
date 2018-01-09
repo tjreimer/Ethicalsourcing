@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Audit Score Cards</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Formula__c</fullName>
+        <description>Formula</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Formula</inlineHelpText>
+        <label>Formula</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrdGrp10__c</fullName>
+        <description>Product Group 10 Count</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 10 Count</inlineHelpText>
+        <label>PrdGrp10</label>
+        <summarizedField>CountryScoreCard__c.PrdGrp10__c</summarizedField>
+        <summaryForeignKey>CountryScoreCard__c.Audit_Score_Card__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PrdGrp1__c</fullName>
+        <description>Product Group 1 Count</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 1 Count</inlineHelpText>
+        <label>PrdGrp1</label>
+        <summarizedField>CountryScoreCard__c.PrdGrp1__c</summarizedField>
+        <summaryForeignKey>CountryScoreCard__c.Audit_Score_Card__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PrdGrp2__c</fullName>
+        <description>Product Group 2 Count</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 2 Count</inlineHelpText>
+        <label>PrdGrp2</label>
+        <summarizedField>CountryScoreCard__c.PrdGrp2__c</summarizedField>
+        <summaryForeignKey>CountryScoreCard__c.Audit_Score_Card__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PrdGrp3__c</fullName>
+        <description>Product Group 3 Count</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 3 Count</inlineHelpText>
+        <label>PrdGrp3</label>
+        <summarizedField>CountryScoreCard__c.PrdGrp3__c</summarizedField>
+        <summaryForeignKey>CountryScoreCard__c.Audit_Score_Card__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PrdGrp4__c</fullName>
+        <description>Product Group 4 Count</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 4 Count</inlineHelpText>
+        <label>PrdGrp4</label>
+        <summarizedField>CountryScoreCard__c.PrdGrp4__c</summarizedField>
+        <summaryForeignKey>CountryScoreCard__c.Audit_Score_Card__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PrdGrp5__c</fullName>
+        <description>Product Group 5 Count</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 5 Count</inlineHelpText>
+        <label>PrdGrp5</label>
+        <summarizedField>CountryScoreCard__c.PrdGrp5__c</summarizedField>
+        <summaryForeignKey>CountryScoreCard__c.Audit_Score_Card__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PrdGrp6__c</fullName>
+        <description>Product Group 6 Count</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 6 Count</inlineHelpText>
+        <label>PrdGrp6</label>
+        <summarizedField>CountryScoreCard__c.PrdGrp6__c</summarizedField>
+        <summaryForeignKey>CountryScoreCard__c.Audit_Score_Card__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PrdGrp7__c</fullName>
+        <description>Product Group 7 Count</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 7 Count</inlineHelpText>
+        <label>PrdGrp7</label>
+        <summarizedField>CountryScoreCard__c.PrdGrp7__c</summarizedField>
+        <summaryForeignKey>CountryScoreCard__c.Audit_Score_Card__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PrdGrp8__c</fullName>
+        <description>Product Group 8 Count</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 8 Count</inlineHelpText>
+        <label>PrdGrp8</label>
+        <summarizedField>CountryScoreCard__c.PrdGrp8__c</summarizedField>
+        <summaryForeignKey>CountryScoreCard__c.Audit_Score_Card__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Prdgrp9__c</fullName>
+        <description>Product Group 9 Count</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 9 Count</inlineHelpText>
+        <label>Prdgrp9</label>
+        <summarizedField>CountryScoreCard__c.PrdGrp9__c</summarizedField>
+        <summaryForeignKey>CountryScoreCard__c.Audit_Score_Card__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Product_Group_10__c</fullName>
+        <description>Product Group 10</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 10</inlineHelpText>
+        <label>Product Group 10</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Group_1__c</fullName>
+        <description>Product Group 1</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 1</inlineHelpText>
+        <label>Product Group 1</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Group_2__c</fullName>
+        <description>Product Group 2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 2</inlineHelpText>
+        <label>Product Group 2</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Group_3__c</fullName>
+        <description>Product Group 3</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 3</inlineHelpText>
+        <label>Product Group 3</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Group_4__c</fullName>
+        <description>Product Group 4</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 4</inlineHelpText>
+        <label>Product Group 4</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Group_5__c</fullName>
+        <description>Product Group 5</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 5</inlineHelpText>
+        <label>Product Group 5</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Group_6__c</fullName>
+        <description>Product Group 6</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 6</inlineHelpText>
+        <label>Product Group 6</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Group_7__c</fullName>
+        <description>Product Group 7</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 7</inlineHelpText>
+        <label>Product Group 7</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Group_8__c</fullName>
+        <description>Product Group 8</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 8</inlineHelpText>
+        <label>Product Group 8</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Group_9__c</fullName>
+        <description>Product Group 9</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Group 9</inlineHelpText>
+        <label>Product Group 9</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Report_Group_Sequence__c</fullName>
+        <description>Report Group Sequence</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Report Group Sequence</inlineHelpText>
+        <label>Report Group Sequence</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Report_Sequence__c</fullName>
+        <description>Report Sequence</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Report Sequence</inlineHelpText>
+        <label>Report Sequence</label>
+        <precision>4</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Score_Card_No__c</fullName>
+        <description>Score Card Number</description>
+        <displayFormat>SC-{00000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>Score Card Number</inlineHelpText>
+        <label>Score Card Number</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <label>Audit Score Card</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Score_Card_No__c</columns>
+        <columns>NAME</columns>
+        <columns>Report_Group_Sequence__c</columns>
+        <columns>Report_Sequence__c</columns>
+        <columns>Formula__c</columns>
+        <columns>Product_Group_1__c</columns>
+        <columns>Product_Group_2__c</columns>
+        <columns>Product_Group_3__c</columns>
+        <columns>Product_Group_4__c</columns>
+        <columns>Product_Group_5__c</columns>
+        <columns>Product_Group_6__c</columns>
+        <columns>Product_Group_7__c</columns>
+        <columns>Product_Group_8__c</columns>
+        <columns>Product_Group_9__c</columns>
+        <columns>Product_Group_10__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Audit Score Cared</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Audit Score Cards</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>
